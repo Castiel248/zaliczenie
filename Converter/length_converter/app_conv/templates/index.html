@@ -1,0 +1,57 @@
+<html>
+  <head>
+	<title>Length Converter</title>
+	<meta charset="utf-8">
+	
+	<style>
+		body {
+		background-color: mintcream;
+		}
+		#logo{
+		background-color: lightseagreen;
+		margin: 20;
+		padding: 20;
+		box-sizing: border-box;
+		}
+		h1{
+		font-family: "Times New Roman", Times, serif;
+		text-align: center;
+		text-decoration-line: underline;
+		font-size: 50px;
+		}
+		
+	</style>
+ 
+  </head>
+  
+
+  <body>
+  
+   <div id="logo"><h1>Length Converter<h1></div>
+   <div id="centre">
+		<h2>Kalkulator jednostek długości</h2>
+		<form action='/convert', method='post'>
+			{% csrf_token %}
+			<p>Wpisz wartość i jednostkę długości:</p>
+			<input type="number" name="number"><br><br>
+			
+			<select name="jednostka">
+				<option>metr</option>
+				<option>kilometr</option>
+				<option>decymetr</option>
+				<option>centymetr </option>
+				<option>milimetr </option>
+				<option>mila </option>				
+			</select><br><br>
+			{{ form.as_p }}
+			<input type="submit"> 
+		</form>
+   
+    
+   
+   
+   </div>
+   
+   
+  <body>
+</html>

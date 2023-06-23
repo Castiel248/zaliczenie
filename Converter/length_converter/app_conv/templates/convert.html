@@ -1,0 +1,83 @@
+<html>
+  <head>
+	<title>Length Converter</title>
+	<meta charset="utf-8">
+	
+	<style>
+		body {
+		background-color: mintcream;
+		}
+		#logo{
+		background-color: lightseagreen;
+		margin: 20;
+		padding: 20;
+		box-sizing: border-box;
+		}
+		h1{
+		font-family: "Times New Roman", Times, serif;
+		text-align: center;
+		text-decoration-line: underline;
+		font-size: 50px;
+		}
+		table, th, td {
+		border: 1px solid black;
+		}
+		tr:hover{
+		background-color: #D6EEEE;
+		}
+		
+	</style>
+ 
+  </head>
+  
+
+  <body>
+  
+   <div id="logo"><h1>Length Converter<h1></div>
+   <div id="centre">
+		<h2>Kalkulator jednostek długości</h2>
+	<a href=" "><button>Wróc</button></a><br>	
+   <p> {{ num }}  {{ jedn }} w przeliczeniu na :</p> 
+   <table>
+		<tr>
+			<th>Nazwa</th>
+			<th>Symbol</th>
+			<th>Wynik</th>
+		<tr>
+		<tr>
+			<td>Metr</td>
+			<td>m</td>
+			<td> {{ m }}</td>
+		</tr>
+		<tr>
+			<td>Kilometr</td>
+			<td>km</td>
+			<td>{{ km }} </td>
+		</tr>
+		<tr>
+			<td>Decymetr</td>
+			<td>dm</td>
+			<td> {{ dm }}</td>
+		</tr>
+		<tr>
+			<td>Centymetr</td>
+			<td>cm</td>
+			<td>{{ cm }} </td>
+		</tr>
+		<tr>
+			<td>Milimetr</td>
+			<td>mm</td>
+			<td>{{ mm }} </td>
+		</tr>
+		<tr>
+			<td>Mila</td>
+			<td>mi</td>
+			<td>{{ mi }} </td>
+		</tr>
+   
+   </div>
+   
+  
+   
+  </body>
+</html>
